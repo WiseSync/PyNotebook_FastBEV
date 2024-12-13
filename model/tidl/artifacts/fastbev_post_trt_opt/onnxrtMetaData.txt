@@ -1,0 +1,7 @@
+numGraphNodes=41
+0:subGraphName=subgraph_0
+0:numInputs=1
+0:numOutputs=3
+0:inputIdx=0
+0:inDataNames=mlvl_volume
+0:outDataNames=dir_cls_scores,cls_scores,bbox_preds

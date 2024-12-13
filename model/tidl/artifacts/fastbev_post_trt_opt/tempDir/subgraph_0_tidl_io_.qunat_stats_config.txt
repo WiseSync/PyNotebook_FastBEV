@@ -1,0 +1,13 @@
+inFileFormat    = 1
+numFrames   = 1
+postProcType   = 0
+postProcDataId   = 0
+quantRangeUpdateFactor   = -1.000000
+inData   = /workspace/work/edgeai-tidl-tools/examples/osrt_python/ort/model/tidl/artifacts/fastbev_post_trt_opt/tempDir/subgraph_0_calib_raw_data.bin
+outData   = "/workspace/work/edgeai-tidl-tools/examples/osrt_python/ort/model/tidl/artifacts/fastbev_post_trt_opt/tempDir/subgraph_0_tidl_io__stats_tool_out.bin"
+netBinFile     = /workspace/work/edgeai-tidl-tools/examples/osrt_python/ort/model/tidl/artifacts/fastbev_post_trt_opt/tempDir/subgraph_0_tidl_net.bin
+ioConfigFile        = /workspace/work/edgeai-tidl-tools/examples/osrt_python/ort/model/tidl/artifacts/fastbev_post_trt_opt/tempDir/subgraph_0_tidl_io_1.bin
+writeTraceLevel        = 0
+debugTraceLevel        = 0
+traceDumpBaseName        = "/workspace/work/edgeai-tidl-tools/examples/osrt_python/ort/model/tidl/artifacts/fastbev_post_trt_opt/tempDir/subgraph_0_tidl_io_
+flowCtrl               = 35

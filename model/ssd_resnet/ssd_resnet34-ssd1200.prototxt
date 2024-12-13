@@ -1,0 +1,108 @@
+name: "ssd"
+caffe_ssd {
+  box_input: "Conv_338"
+  box_input: "Conv_360"
+  box_input: "Conv_382"
+  box_input: "Conv_404"
+  box_input: "Conv_426"
+  box_input: "Conv_448"
+  class_input: "Conv_349"
+  class_input: "Conv_371"
+  class_input: "Conv_393"
+  class_input: "Conv_415"
+  class_input: "Conv_437"
+  class_input: "Conv_459"
+  output: "bboxes"
+  output: "labels"
+  output: "scores"
+  in_width: 1200
+  in_height: 1200
+  prior_box_param {
+    min_size: 84.0
+    max_size: 180.0
+    aspect_ratio: 2.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 24.0
+  }
+  prior_box_param {
+    min_size: 180.0
+    max_size: 396.0
+    aspect_ratio: 2.0
+    aspect_ratio: 3.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 48.0
+  }
+  prior_box_param {
+    min_size: 396.0
+    max_size: 612.0
+    aspect_ratio: 2.0
+    aspect_ratio: 3.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 92.0
+  }
+  prior_box_param {
+    min_size: 612.0
+    max_size: 828.0
+    aspect_ratio: 2.0
+    aspect_ratio: 3.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 171.0
+  }
+  prior_box_param {
+    min_size: 828.0
+    max_size: 1044.0
+    aspect_ratio: 2.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 400.0
+  }
+  prior_box_param {
+    min_size: 1044.0
+    max_size: 1260.0
+    aspect_ratio: 2.0
+    flip: true
+    clip: false
+    variance: 0.1
+    variance: 0.1
+    variance: 0.2
+    variance: 0.2
+    step: 400.0
+  }
+  detection_output_param {
+    num_classes: 81
+    share_location: true
+    background_label_id: 0
+    nms_param {
+      nms_threshold: 0.5
+      top_k: 200
+    }
+    code_type: CENTER_SIZE
+    keep_top_k: 200
+    confidence_threshold: 0.3
+  }
+  data_layout: INTERLEAVED
+}
