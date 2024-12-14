@@ -35,3 +35,6 @@ test.jpg
 images/*
 result.txt
 viridis_colormap.txt
+/data/bev_features/*
+/data/features/*
+/data/results/*
