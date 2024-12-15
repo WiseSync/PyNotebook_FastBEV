@@ -40,3 +40,4 @@ viridis_colormap.txt
 /data/results/*
 /model/tidl/fastbev_post*
 /model/tidl/fastbev_pre*
+model/tidl/fastbev-det.pth
