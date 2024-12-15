@@ -38,3 +38,5 @@ viridis_colormap.txt
 /data/bev_features/*
 /data/features/*
 /data/results/*
+/model/tidl/fastbev_post*
+/model/tidl/fastbev_pre*
